@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/7aa3a8cd18.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        function validate() {
+
+            if (document.myForm.firstname.value == "") {
+                alert("Please provide your firstname!");
+                document.myForm.firstname.focus();
+                return false;
+            }
+            if (document.myForm.lastname.value == "") {
+                alert("Please provide your lastname!");
+                document.myForm.lastname.focus();
+                return false;
+            }
+            if (document.myForm.country.value == "1") {
+                alert("Please provide your country!");
+                return false;
+            }
+            return (true);
+        }
+    </script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .contact-section {
+            width: 100vw;
+            height: 30vw;
+            background-image: url('a.jpg');
+            background-size: cover;
+        }
+
+        nav {
+            width: 100vw;
+            height: 5vw;
+            background-color: black;
+            opacity: 70%;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .logo {
+            width: 12vw;
+            font-size: 2vw;
+            display: flex;
+            /* background-color: blue; */
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .navigation {
+            width: 50vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        .navigation a li {
+            margin-right: 4vw;
+            font-size: 1.5vw;
+            font-weight: bold;
+        }
+
+        .navigation a li:hover {
+            font-size: 1.8vw;
+        }
+
+        .social-medias {
+            width: 16vw;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2vw;
+            /* background-color: yellow; */
+            cursor: pointer;
+
+        }
+
+        .first {
+            font-size: 6vw;
+            color: white;
+            text-align: center;
+            margin-top: 5vw;
+
+        }
+
+        .second {
+            font-size: 2vw;
+            color: white;
+            text-align: center;
+            margin-top: 2vw;
+        }
+
+
+
+        .form-wrapper {
+            margin-top: -7px;
+            display: flex;
+        }
+
+        .contact {
+            width: 50%;
+            height: 760px;
+            background-color: rgb(230, 230, 230);
+            display: block;
+        }
+
+        .map-wrapper {
+            width: 50%;
+            height: 760px;
+        }
+
+        .map {
+            width: 100%;
+            height: 100%;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .contact-text,
+        form {
+            padding: 15px;
+        }
+
+        .card-wrapper {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+        }
+
+        .card {
+
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+            transition: 0.3s;
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            margin: 86px;
+            height: 200px;
+        }
+
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-hr {
+            width: 50%;
+            margin-left: 25% !important;
+            margin-right: 25% !important;
+        }
+
+        footer {
+            margin-top: 10vw;
+            opacity: 50%;
+            width: 100vw;
+            height: 18vw;
+            background-color: rgb(26, 25, 25);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        footer:hover {
+            opacity: 100%;
+        }
+
+        .main {
+            width: 100vw;
+            height: 15vw;
+            background-color: rgb(26, 25, 25);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .visit {
+            width: 20vw;
+            font-size: 1.5vw;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid white;
+
+        }
+
+        .v-title,
+        .p-title,
+        .c-title {
+            font-size: 2vw;
+        }
+
+        .payment {
+            width: 20vw;
+            font-size: 1.5vw;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid white;
+
+        }
+
+        .connect {
+            width: 20vw;
+            font-size: 1.5vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .copy {
+            width: 100vw;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-section">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i>
+                <div class="company-name">SansX <span style="font-weight: bold;">Travels</span> </div>
+
+            </div>
+            <div class="navigation">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Services</li>
+                </a>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+            </div>
+            <div class="social-medias">
+                <i class="fas fa-search"></i>
+                <i class="fab fa-facebook-square" style="color: blue;"></i>
+                <i class="fab fa-twitter" style="color: skyblue;"></i>
+               <a href="https://www.google.com/search?q=tours+and+travels&oq=tours+and+travels&aqs=chrome..69i57j0i402j0i512l8.6006j0j7&sourceid=chrome&ie=UTF-8 " target="blank"><i class="fab fa-google-plus-g" style="color: tomato;"></i></a>
+
+                
+
+            </div>
+        </nav>
+        <div class="first">MAKE A RESERVATION</div>
+        <div class="second">Our team will find you the best hotels and packages for your dream vacation</div>
+
+    </div>
+
+
+
+    <div class="form-wrapper">
+        <div class="contact">
+            <div class="container">
+                <div class="contact-text">
+                    <h1 style="font-weight: normal;">CONTACT US</h1>
+                    <h3 style="font-weight: normal; font-size: 15px;">Send us a message and we will take the time to get
+                        to know
+                        you so we can help you find your amazing adventure.</h3>
+                </div>
+                <form action="#" name="myForm" onsubmit="return(validate());">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">City</label>
+                    <select id="country" name="country">
+                        <option value="1">....</option>
+                        <option value="2">USA</option>
+                        <option value="3">Canda</option>
+                        <option value="4">France</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="map-wrapper">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594417.4396345117!2d81.88603076632948!3d28.383833815033775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995e8c77d2e68cf%3A0x34a29abcd0cc86de!2sNepal!5e0!3m2!1sen!2snp!4v1628508761761!5m2!1sen!2snp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="telephone.png">
+            <h3 style="font-size: 30px;">CALL US</h3>
+            <hr class="card-hr">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, aliquid praesentium neque, nesciunt quidem
+        </div>
+
+        <div class="card">
+            <img src="comments.png">
+            <h3 style="font-size: 30px;">MEET US</h3>
+            <hr class="card-hr">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, aliquid praesentium neque, nesciunt quidem
+        </div>
+
+        <div class="card">
+            <img src="telephone.png">
+            <h3 style="font-size: 30px;">ASK US</h3>
+            <hr class="card-hr">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, aliquid praesentium neque, nesciunt quidem
+        </div>
+    </div>
+    
+  
+    <footer>
+        <div class="main">
+            <div class="visit">
+                <div class="v-title">Visit Our Agency:</div>
+                <div class="v-d">
+                    -MON-FRI(7am to 6pm)
+                </div>
+                <div class="v-d2">
+                    -SAT-SUN(10am to 2pm)
+                </div>
+                <div class="v-d3">
+                    location: Baneshwor,Kathmandu
+                </div>
+            </div>
+            <div class="payment">
+                <div class="p-title">Payment Methods:</div>
+                <div class="pd">Online Payment</div>
+                <div class="pd">Cash Payment</div>
+                <div class="pd">E-sewa</div>
+
+
+            </div>
+            <div class="connect">
+                <div class="c-title">Connect With Us</div>
+                <div class="cd"><i class="fas fa-phone-volume"></i>+977-984132457</div>
+                <div class="cd1"><i class="fas fa-envelope-open"></i>SansXtrav69@gmail.com</div>
+            </div>
+        </div>
+        <div class="copy">&copy;2021 SansX Travels.All Rights Reserved.</div>
+    </footer>
+</body>
+
+</html>

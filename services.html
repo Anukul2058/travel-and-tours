@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <script src="https://kit.fontawesome.com/7aa3a8cd18.js" crossorigin="anonymous"></script>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      /* overflow-x: hidden; */
+    }
+
+    .contact-section {
+      width: 100vw;
+      height: 30vw;
+      background-image: url('c.jpg');
+      background-size: cover;
+
+
+
+    }
+
+    nav {
+      width: 100vw;
+      height: 5vw;
+      background-color: black;
+      opacity: 70%;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .logo {
+      width: 12vw;
+      font-size: 2vw;
+      display: flex;
+      /* background-color: blue; */
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .navigation {
+      width: 50vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: white;
+
+
+    }
+
+    .navigation a li {
+      margin-right: 4vw;
+      font-size: 1.5vw;
+      font-weight: bold;
+    }
+
+    .navigation a li:hover {
+      font-size: 1.8vw;
+    }
+
+    .social-medias {
+      width: 16vw;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 2vw;
+      /* background-color: yellow; */
+      cursor: pointer;
+
+    }
+
+
+
+
+    .overlay {
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 5;
+    }
+
+
+    .first {
+      position: absolute;
+      top: 100px;
+      z-index: 5;
+      color: white;
+      left: 28%;
+      font-size: 75px;
+      font-weight: bolder;
+    }
+
+    .second {
+      position: absolute;
+      top: 190px;
+      z-index: 5;
+      color: white;
+      font-size: 2vw;
+      left: 20%;
+      font-weight: normal;
+    }
+
+    .container2 {
+      padding: 25px;
+      text-align: center;
+      margin-top: -70px;
+
+    }
+
+    .container1 {
+      padding: 160px;
+      margin-top: -50px;
+    }
+
+    .upper {
+      display: flex;
+    }
+
+    .upper-content {
+      padding: 95px;
+    }
+
+    .hr-ho {
+      width: 50%;
+      margin-left: 25% !important;
+      margin-right: 25% !important;
+    }
+
+    .hr-hi {
+      width: 5%;
+      margin: 10px;
+      margin-left: 47% !important;
+      margin-right: 40% !important;
+    }
+
+
+    .luxury {
+      height: 400px;
+      width: 400px;
+      border-radius: 5px;
+    }
+
+    .bolder {
+      font-weight: bold;
+    }
+
+    .sponsors {
+      display: flex;
+      padding: 20px;
+      margin-left: 25%;
+    }
+
+    .spon {
+      height: 100px;
+    }
+
+    .what {
+      margin-top: 20px;
+
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th {
+      padding: 10px;
+    }
+
+    footer {
+      /* margin-top: 10vw; */
+      opacity: 50%;
+      width: 100vw;
+      height: 18vw;
+      background-color: rgb(26, 25, 25);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    footer:hover {
+      opacity: 100%;
+    }
+
+    .main {
+      width: 100vw;
+      height: 15vw;
+      background-color: rgb(26, 25, 25);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .visit {
+      width: 20vw;
+      font-size: 1.5vw;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid white;
+
+    }
+
+    .v-title,
+    .p-title,
+    .c-title {
+      font-size: 2vw;
+    }
+
+    .payment {
+      width: 20vw;
+      font-size: 1.5vw;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid white;
+
+    }
+
+    .connect {
+      width: 20vw;
+      font-size: 1.5vw;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .copy {
+      width: 100vw;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contact-section">
+    <nav>
+      <div class="logo">
+        <i class="fas fa-plane-departure"></i>
+        <div class="company-name">SansX <span style="font-weight: bold;">Travels</span> </div>
+
+      </div>
+      <div class="navigation">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="about.html">
+          <li>About</li>
+        </a>
+        <a href="services.html">
+          <li>Services</li>
+        </a>
+        <a href="gallery.html">
+          <li>Gallery</li>
+        </a>
+        <a href="contact.html">
+          <li>Contact</li>
+        </a>
+      </div>
+      <div class="social-medias">
+        <i class="fas fa-search"></i>
+        <i class="fab fa-facebook-square" style="color: blue;"></i>
+        <i class="fab fa-twitter" style="color: skyblue;"></i>
+        <a href="https://www.google.com/search?q=tours+and+travels&oq=tours+and+travels&aqs=chrome..69i57j0i402j0i512l8.6006j0j7&sourceid=chrome&ie=UTF-8 " target="blank"><i class="fab fa-google-plus-g" style="color: tomato;"></i></a>
+
+        
+
+      </div>
+    </nav>
+    <div class="first">OUR SERVICES</div>
+    <div class="second">Our team will find you the best hotels and packages for your dream vacation</div>
+
+  </div>
+
+
+  <div class="container1">
+    <div class="upper">
+      <img src="d.jpg" class="luxury">
+      <div class="upper-content">
+        <h1 style="text-align: center;
+                    font-size: 3rem; color: lightblue;">PURE LUXURY</h1>
+        <hr class="hr-ho">
+        <div style="    padding: 25px;">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure debitis quas magni vel quisquam
+          quasi quam optio necessitatibus omnis maxime, ea adipisci illo ab numquam? Tempore officiis! Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Aspernatur iure debitis quas magni vel quisquam quasi quam
+          optio necessitatibus omnis maxime, ea adipisci illo ab numquam? Tempore officiis!
+        </div>
+      </div>
+    </div>
+    <div class="middle">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat non quas soluta iure quasi blanditiis, ad
+      perferendis, maxime unde ut illum ab quo quod qui. Excepturi reiciendis corrupti exercitationem culpa. Lorem,
+      ipsum dolor sit amet consectetur adipisicing elit. Aliquid quam quos quaerat nemo veritatis consequuntur itaque?
+      Amet possimus aliquid velit fugit facilis reprehenderit ut, recusandae quidem suscipit corrupti culpa
+      perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, facilis quod sunt porro sapiente
+      aut sit unde facere, dicta placeat temporibus beatae sint, ratione totam veniam saepe. Suscipit, accusamus
+      veritatis?
+    </div>
+  </div>
+  <div class="container2">
+    <h1 class="partners" style="color: lightblue;">OUR PARTNERS</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure sunt officiis</div>
+    <hr class="hr-hi">
+    <div class="bolder">We work with the very best. We are proud of out partners.</div>
+    <div class="bolder">who work with us to deliver the best in bespoke travel</div>
+
+    <div class="sponsors">
+      <img src="a.png" class="spon">
+      <img src="b.png" class="spon">
+    </div>
+  </div>
+
+  <div class="container2" style="margin-top: 0px;">
+    <h1 class="partners" style="color: lightblue;">OUR PROMISES</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure sunt officiis</div>
+    <hr class="hr-hi">
+    <div class="bolder">No request is too big or too small for our team. If it matters to you,</div>
+    <div class="bolder">it matters to us. Let us make your escape perfect.</div>
+
+    <!-- <div class="what">
+      <table>
+        <tr>
+          <th>WHAT WE ARE</th>
+          <th>WHAT WE DO</th>
+          <th>WHAT WE BELIEVE</th>
+        </tr>
+    </div> -->
+    
+  </div>
+  <footer>
+    <div class="main">
+      <div class="visit">
+        <div class="v-title">Visit Our Agency:</div>
+        <div class="v-d">
+          -MON-FRI(7am to 6pm)
+        </div>
+        <div class="v-d2">
+          -SAT-SUN(10am to 2pm)
+        </div>
+        <div class="v-d3">
+          location: Baneshwor,Kathmandu
+        </div>
+      </div>
+      <div class="payment">
+        <div class="p-title">Payment Methods:</div>
+        <div class="pd">Online Payment</div>
+        <div class="pd">Cash Payment</div>
+        <div class="pd">E-sewa</div>
+
+
+      </div>
+      <div class="connect">
+        <div class="c-title">Connect With Us</div>
+        <div class="cd"><i class="fas fa-phone-volume"></i>+977-984132457</div>
+        <div class="cd1"><i class="fas fa-envelope-open"></i>SansXtrav69@gmail.com</div>
+      </div>
+    </div>
+    <div class="copy">&copy;2021 SansX Travels.All Rights Reserved.</div>
+  </footer>
+
+  
+</body>
+
+</html>
